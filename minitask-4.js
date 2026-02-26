@@ -31,7 +31,7 @@ for (let i = 0; i < inputData.length; i++) {
     tipeData.boolean++;
   } else if (Array.isArray(Data)) {
     tipeData.array++;
-  } else if (typeof Data === 'object') {
+  } else if (Data instanceof Object) {
     tipeData.object++;
   }
 }
